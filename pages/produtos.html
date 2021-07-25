@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <script src="../js/script.js"></script>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="pages/clientes.html">Produtos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="form">
+        <form>
+            <h4>Cadastro de Produtos</h4>
+            <div class="form-group">
+                <label for="nomeProdLabel">Nome do Produto</label>
+                <input class="form-control" id="nomeprod" aria-describedby="nomeHelp" placeholder="Produto">
+            </div>
+            <div class="form-group">
+                <label for="codigoLabel">Código</label>
+                <input class="form-control" id="codigoprod" placeholder="Código">
+            </div>
+            <div class="form-group">
+                <label for="preçoLabel">Preço</label>
+                <input type="number" class="form-control" id="preçoprod" aria-describedby="preçoHelp" placeholder="Preço">
+              </div>
+              <div class="form-group">
+                <label for="quantidadeLabel">Quantidade</label>
+                <select class="form-control" id="quantidadeprod">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="obsLabel">Observação</label>
+                <input class="form-control" id="obsprod" placeholder="Observação">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="storeProd()">Enviar</button>
+        </form>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
